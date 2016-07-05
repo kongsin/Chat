@@ -3,10 +3,12 @@ var currentId;
 var currentToken;
 
 io.on('token', function(params) {
-    currentToken = params;
-    var msg_data = '{"id":"'+currentId+'", "token":"'+currentToken+'"}';
-	setCookie("chat",msg_data, 100);
-    window.location = "http://192.168.43.114:3000/chats";
+    if (currentToken == null) {
+        currentToken = params;
+        var msg_data = '{"id":"'+currentId+'", "token":"'+currentToken+'"}';
+        setCookie("chat",msg_data, 100);
+        window.location = "http://192.168.43.114:3000/chats";
+    }
 });
 
 io.on('message', function(message) {
