@@ -1,0 +1,13 @@
+{
+  "name": "chat-bot",
+  "version": "0.0.1",
+  "description": "Hello This is a simple file for test nodeJs read file the second line and the last line",
+  "dependencies": {},
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pansansou@gmail.com",
+  "license": "ISC"
+}
